@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmark_me_here_docs=self.webpackChunkmark_me_here_docs||[]).push([[1064],{6995:e=>{e.exports=JSON.parse('{"permalink":"/MarkMeHereDocs/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
