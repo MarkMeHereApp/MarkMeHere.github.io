@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <div className="flex max-w-screen-xl px-4 py-8 mx-auto gap-8 ">
-      <div className="mr-auto place-self-center lg:col-span-7">
+      <div className="mr-auto place-self-center lg:col-span-7 animate-fade-right animate-once animate-ease-in">
         <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl">
           MarkMeHere!
         </h1>
@@ -47,7 +47,7 @@ const Header = () => {
         <img
           src={colorMode === "dark" ? HeroExampleDark : HeroExampleLight}
           alt="HeroExample"
-          className="h-auto max-w-xl rounded-lg shadow-xl "
+          className="h-auto max-w-xl rounded-lg shadow-xl animate-fade-left animate-once animate-ease-in"
         />
         {/* <ImagePlaceholder /> */}
       </div>
@@ -59,7 +59,7 @@ const DemoVideo = () => {
   return (
     <div className="flex max-w-screen-xl px-4 py-8 mx-auto gap-8 justify-center w-full h-full">
       <ReactPlayer
-        className=""
+        className="animate-fade animate-once animate-ease-in "
         url={"https://www.youtube.com/watch?v=dQw4w9WgXcQ"}
       />
     </div>

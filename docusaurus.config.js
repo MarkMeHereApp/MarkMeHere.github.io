@@ -1,8 +1,8 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require("prism-react-renderer/themes/vsLight");
-const darkCodeTheme = require("prism-react-renderer/themes/vsDark");
+const lightCodeTheme = require("prism-react-renderer/themes/nightOwlLight");
+const darkCodeTheme = require("prism-react-renderer/themes/nightOwl");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -42,7 +42,6 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: `https://github.com/MarkMeHereApp/MarkMeHereDocs/tree/main/`,
-          showLastUpdateAuthor: true,
           showLastUpdateTime: true,
         },
         blog: {
