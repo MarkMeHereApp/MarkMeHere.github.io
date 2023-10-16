@@ -4,7 +4,7 @@ import ReactPlayer from "react-player";
 import HeroExampleDark from "./HeroExample-Dark.png";
 import HeroExampleLight from "./HeroExample-Light.png";
 import { useColorMode } from "@docusaurus/theme-common";
-
+import BrowserOnly from "@docusaurus/BrowserOnly";
 const Header = () => {
   const { colorMode, setColorMode } = useColorMode();
 
@@ -36,9 +36,9 @@ const Header = () => {
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-              clip-rule="evenodd"
+              clipRule="evenodd"
             ></path>
           </svg>
         </a>
@@ -60,7 +60,7 @@ const DemoVideo = () => {
     <div className="flex max-w-screen-xl px-4 py-8 mx-auto gap-8 justify-center w-full h-full">
       <ReactPlayer
         className="animate-fade animate-once animate-ease-in "
-        url={"https://youtu.be/SWr6NW2osqc?si=BmbtWxd9BKFnWXpO"}
+        url={"https://www.youtube.com/watch?v=SWr6NW2osqc"}
       />
     </div>
   );
@@ -77,7 +77,11 @@ const FeaturesList = () => {
 const Hero = () => {
   return (
     <>
-      <Header />
+      <BrowserOnly>
+        {() => {
+          return <Header />;
+        }}
+      </BrowserOnly>
       <DemoVideo />
       <FeaturesList />
     </>
