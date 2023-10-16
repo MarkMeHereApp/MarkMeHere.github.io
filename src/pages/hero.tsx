@@ -1,8 +1,13 @@
 import React from "react";
 import ImagePlaceholder from "../components/ImagePlaceholder";
 import ReactPlayer from "react-player";
+import HeroExampleDark from "./HeroExample-Dark.png";
+import HeroExampleLight from "./HeroExample-Light.png";
+import { useColorMode } from "@docusaurus/theme-common";
 
 const Header = () => {
+  const { colorMode, setColorMode } = useColorMode();
+
   return (
     <div className="flex max-w-screen-xl px-4 py-8 mx-auto gap-8 ">
       <div className="mr-auto place-self-center lg:col-span-7">
@@ -38,9 +43,13 @@ const Header = () => {
           </svg>
         </a>
       </div>
-      <div className="flex w-1/2 h-full justify-center">
-        {/* <img src={HeroExamplePicture} alt="HeroExample" /> */}
-        <ImagePlaceholder />
+      <div className="flex w-1/2 h-full justify-center ">
+        <img
+          src={colorMode === "dark" ? HeroExampleDark : HeroExampleLight}
+          alt="HeroExample"
+          className="h-auto max-w-xl rounded-lg shadow-xl "
+        />
+        {/* <ImagePlaceholder /> */}
       </div>
     </div>
   );
