@@ -83,7 +83,7 @@ const Hero = () => {
         }}
       </BrowserOnly>
       <DemoVideo />
-      <FeaturesList />
+      {/* <FeaturesList /> */}
     </>
   );
 };
