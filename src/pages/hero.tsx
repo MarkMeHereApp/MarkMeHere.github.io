@@ -9,8 +9,8 @@ const Header = () => {
   const { colorMode, setColorMode } = useColorMode();
 
   return (
-    <div className="flex max-w-screen-xl px-4 py-8 mx-auto gap-8 ">
-      <div className="mr-auto place-self-center lg:col-span-7 animate-fade-right animate-once animate-ease-in">
+    <div className="flex flex-col md:flex-row max-w-screen-xl px-auto py-8 mx-auto gap-8 overflow-hidden">
+      <div className="self-center md:mr-auto animate-fade-right animate-once animate-ease-in overflow-wrap">
         <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl">
           MarkMeHere!
         </h1>
@@ -43,11 +43,11 @@ const Header = () => {
           </svg>
         </a>
       </div>
-      <div className="flex w-1/2 h-full justify-center ">
+      <div className="flex w-full h-full justify-center ">
         <img
           src={colorMode === "dark" ? HeroExampleDark : HeroExampleLight}
           alt="HeroExample"
-          className="h-auto max-w-xl rounded-lg shadow-xl animate-fade-left animate-once animate-ease-in"
+          className="object-cover h-auto max-w-sm rounded-lg shadow-xl animate-fade-left animate-once animate-ease-in"
         />
         {/* <ImagePlaceholder /> */}
       </div>
