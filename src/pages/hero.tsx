@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <div className="flex flex-col md:flex-row max-w-screen-xl px-auto py-8 mx-auto gap-8 overflow-hidden">
-      <div className="self-center md:mr-auto animate-fade-right animate-once animate-ease-in overflow-wrap">
+      <div className="self-center animate-fade-right animate-once animate-ease-in overflow-wrap">
         <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl">
           MarkMeHere!
         </h1>
@@ -57,7 +57,7 @@ const Header = () => {
 
 const DemoVideo = () => {
   return (
-    <div className="flex max-w-screen-xl px-4 py-8 mx-auto gap-8 justify-center w-full h-full">
+    <div className="flex px-auto py-8 mx-auto gap-8 justify-center w-full h-full">
       <ReactPlayer
         className="animate-fade animate-once animate-ease-in "
         url={"https://www.youtube.com/watch?v=SWr6NW2osqc"}
