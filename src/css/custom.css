@@ -28,3 +28,8 @@
   --ifm-color-primary-lighter: #fbd53d;
   --ifm-color-primary-lightest: #fcdd65;
 }
+
+a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
