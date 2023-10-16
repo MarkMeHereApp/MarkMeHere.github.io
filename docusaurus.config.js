@@ -71,6 +71,7 @@ const config = {
         title: "MarkMeHere!",
         logo: {
           alt: "MarkMeHere! Logo",
+          className: "hover-wave",
           src: "img/logo-light.svg",
           srcDark: "img/logo-dark.svg",
         },
