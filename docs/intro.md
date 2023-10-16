@@ -1,47 +1,35 @@
 ---
 sidebar_position: 1
+sidebar_label: Getting Started
 ---
 
-# Tutorial Intro
+# Getting Started
 
-Let's discover **Docusaurus in less than 5 minutes**.
+To get started with Mark Me Here!, follow these steps:
 
-## Getting Started
+1. **Clone the Repository**: Clone this repository to your local machine using the following command:
 
-Get started by **creating a new site**.
+   ```bash
+   git clone https://github.com/MarkMeHereApp/MarkMeHere.git
+   ```
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+2. **Install Dependencies**: Navigate to the project directory and install the necessary dependencies:
 
-### What you'll need
+   ```bash
+   cd MarkMeHere
+   npm install
+   ```
 
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+3. **Configure**: Set up the required configurations, such as database connections and authentication methods, as described in the project documentation. Confirm the app is configured correctly by running:
 
-## Generate a new site
+   ```bash
+   npm run build
+   ```
 
-Generate a new Docusaurus site using the **classic template**.
+4. **Run the Application**: Start the application by running:
 
-The classic template will automatically be added to your project after you run the command:
+   ```bash
+   npm run start
+   ```
 
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+5. **Access the Web Interface**: Open your web browser and go to `http://localhost:3000` to access Mark Me Here!
