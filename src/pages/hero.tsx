@@ -60,7 +60,7 @@ const DemoVideo = () => {
     <div className="flex max-w-screen-xl px-4 py-8 mx-auto gap-8 justify-center w-full h-full">
       <ReactPlayer
         className="animate-fade animate-once animate-ease-in "
-        url={"https://www.youtube.com/watch?v=dQw4w9WgXcQ"}
+        url={"https://youtu.be/SWr6NW2osqc?si=BmbtWxd9BKFnWXpO"}
       />
     </div>
   );
