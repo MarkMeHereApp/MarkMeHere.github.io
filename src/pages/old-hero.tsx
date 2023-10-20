@@ -10,52 +10,21 @@ const Header = () => {
 
   return (
     <>
-      <section className="animate-once animate-ease-in space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32">
+      <section className="space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32">
         <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center">
-          <h1 className="font-extrabold text-3xl sm:text-5xl md:text-6xl lg:text-7xl">
+          <h1 className="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl">
             Mark Me Here!
           </h1>
-          <p className=" max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
-            Finally Solving School Attendance.
+          <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
+            Finally Solving Attendance.
           </p>
-          <div className="flex justify-center space-x-4 py-6 ">
-            <a
-              href="https://demo.markmehere.com"
-              target="_blank"
-              className="animate-fade-right inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center border border-gray-300 rounded-lg focus:ring-4 focus:ring-gray-100"
-            >
-              Interactive Demo
-            </a>
-            <a
-              href="/docs/intro"
-              className="animate-fade-left  inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300"
-            >
-              Start Using For Free in 5 Minutes
-              <svg
-                className="w-5 h-5 ml-2 -mr-1"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                  clipRule="evenodd"
-                ></path>
-              </svg>
-            </a>
-          </div>
+          <div className="space-x-4"></div>
         </div>
       </section>
-      {/*
-      *
-      * This is the "features" section from https://tx.shadcn.com/
-      * 
       <section
         id="features"
         className="container space-y-6 bg-slate-50 py-8 dark:bg-transparent md:py-12 lg:py-24"
       >
-        
         <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
           <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
             Features
@@ -153,8 +122,24 @@ const Header = () => {
             </div>
           </div>
         </div>
+        <div className="mx-auto text-center md:max-w-[58rem]">
+          <p className="leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+            Taxonomy also includes a blog and a full-featured documentation site
+            built using Contentlayer and MDX.
+          </p>
+        </div>
       </section>
-      */}
+      <section id="open-source" className="container py-8 md:py-12 lg:py-24">
+        <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
+          <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
+            Proudly Open Source
+          </h2>
+          <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+            Taxonomy is open source and powered by open source software. <br />{" "}
+            The code is available on .{" "}
+          </p>
+        </div>
+      </section>
     </>
   );
 };
